@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <meta name="description"
+        content="Pavo is a mobile app Tailwind CSS HTML template created to help you present benefits, features and information about mobile apps in order to convince visitors to download them" />
+    <meta name="author" content="Your name" />
+
+    <meta property="og:site_name" content="" /> <meta property="og:site" content="" /> <meta property="og:title" content="" /> <meta property="og:description" content="" /> <meta property="og:image" content="" /> <meta property="og:url" content="" /> <meta name="twitter:card" content="summary_large_image" /> <title>ClabCarpool ESPOL</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" /> 
+    <link href="css/swiper.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar fixed-top">
+        <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap">
+
+            <a class="inline-block mr-8 py-1 text-xl whitespace-nowrap hover:no-underline focus:no-underline"
+                href="index.html">
+                <img src="/images/Logo Carpool.png" alt="alternative" class="h-8" />
+            </a>
+
+            <button
+                class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400"
+                type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center"
+                id="navbarsExampleDefault">
+                <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
+                    <li>
+                        <a class="nav-link page-scroll active" href="/index.html">Inicio <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div> </div> </nav> <div class="flex items-center justify-center min-h-screen bg-gray-100">
+        <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
+            <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Iniciar Sesión</h2>
+            <form class="space-y-5">
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
+                    <input type="email" id="email" placeholder="ejemplo@correo.com"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        required>
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Contraseña</label>
+                    <input type="password" id="password" placeholder="Contraseña"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        required>
+                </div>
+                <button type="submit" id="loginButton"
+                    class="w-full py-2 px-4 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-200">Entrar</button>
+            </form>
+            <p class="mt-4 text-center text-sm text-gray-600">
+                ¿No tienes una cuenta?
+                <button id="signupButton" class="text-blue-600 hover:underline font-medium">Regístrate</button>
+            </p>
+            <p id="error-message" class="mt-2 text-center text-red-500 text-sm"></p>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script> <script src="/js/jquery.easing.min.js"></script> <script src="/js/swiper.min.js"></script> <script src="/js/jquery.magnific-popup.js"></script> <script src="/js/scripts.js"></script> <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    
+    <script src="/js/firebase-auth.js"></script>
+</body>
+
+</html>

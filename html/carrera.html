@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalles de la Carrera</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Pavo is a mobile app Tailwind CSS HTML template created to help you present benefits, features and information about mobile apps in order to convince visitors to download them" />
+    <meta name="author" content="Your name" />
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" />
+    <meta property="og:site" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Webpage Title -->
+    <title>ClabCarpool ESPOL</title>
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="css/swiper.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <nav class="bg-white border-gray-100"></nav>
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/images/Logo Carpool.png" class="h-8" alt="ClabCarpool Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-black">ClabCarpool</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+                <li>
+                    <a href="/html/dashboard.html"
+                        class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0"
+                        aria-current="page">Dashboard</a>
+                </li>
+                <li>
+                    <a href="/html/datos.html"
+                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Datos</a>
+                </li>
+                <li>
+                    <a href="/html/reserva.html"
+                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Reserva</a>
+                </li>
+                <li>
+                    <a href="/index.html"
+                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Log
+                        out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="min-h-screen flex flex-col justify-center items-center bg-gray-100 py-10">
+        <div class="w-full max-w-2xl px-6">
+            <div class="flex flex-col items-center space-y-8">
+                <div class="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center mb-2">
+                    <svg class="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <h2 id="nombre" class="text-4xl font-extrabold text-gray-800"></h2>
+                <div class="flex items-center space-x-3">
+                    <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm0 12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm12-12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zm0 12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                    </svg>
+                    <p id="telefono" class="text-lg text-gray-600"></p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87M16 3.13a4 4 0 010 7.75M8 3.13a4 4 0 000 7.75" />
+                    </svg>
+                    <span class="text-lg text-gray-600">
+                        Cupos: <strong id="cupos" class="text-purple-700"></strong></span>
+                    <div id="boton-reserva-container" class="mt-6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const nombre = localStorage.getItem("nombre");
+            const telefono = localStorage.getItem("telefono");
+            const localCupos = parseInt(localStorage.getItem("cupos"));
+
+            const reservas = JSON.parse(localStorage.getItem("reservas")) || {};
+            const reserva = reservas[nombre];
+
+            const elNombre = document.getElementById("nombre");
+            const elTelefono = document.getElementById("telefono");
+            const elCupos = document.getElementById("cupos");
+            const botonContainer = document.getElementById("boton-reserva-container");
+
+            if (!nombre || !telefono || isNaN(localCupos)) {
+                elNombre.textContent = "Información no disponible";
+                return;
+            }
+
+            // Mostrar datos
+            elNombre.textContent = nombre;
+            elTelefono.textContent = "Número de teléfono: " + telefono;
+
+            // Obtener cupos desde reserva o localStorage
+            const cuposDisponibles = reserva?.cupos ?? localCupos;
+            elCupos.textContent = cuposDisponibles;
+
+            // Si ya reservó, no permitir más acciones
+            if (reserva?.reservado) {
+                const btn = document.createElement("button");
+                btn.textContent = "Ya has reservado un cupo";
+                btn.className = "bg-blue-300 text-white font-bold py-2 px-6 rounded mt-4 w-full cursor-not-allowed opacity-50";
+                btn.disabled = true;
+                botonContainer.appendChild(btn);
+                return;
+            }
+
+            // Si no hay cupos
+            if (cuposDisponibles <= 0) {
+                const btn = document.createElement("button");
+                btn.textContent = "No hay cupos disponibles";
+                btn.className = "bg-gray-400 text-white font-bold py-2 px-6 rounded mt-4 w-full cursor-not-allowed opacity-50";
+                btn.disabled = true;
+                botonContainer.appendChild(btn);
+                return;
+            }
+
+            // Mostrar botón si hay cupos y aún no ha reservado
+            const btn = document.createElement("button");
+            btn.textContent = "Reservar";
+            btn.className = "bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded mt-4 w-full";
+
+            btn.addEventListener("click", () => {
+                const nuevosCupos = Math.max(0, cuposDisponibles - 1);
+
+                reservas[nombre] = {
+                    telefono,
+                    reservado: true,
+                    cupos: nuevosCupos
+                };
+
+                localStorage.setItem("reservas", JSON.stringify(reservas));
+                localStorage.setItem("cupos", nuevosCupos);
+
+                elCupos.textContent = nuevosCupos;
+                btn.textContent = "Ya has reservado un cupo";
+                btn.disabled = true;
+                btn.classList.add("opacity-50", "cursor-not-allowed");
+
+                alert(`Has reservado tu cupo con ${nombre}`);
+            });
+
+            botonContainer.appendChild(btn);
+        });
+    </script>
+
+
+
+
+    <script src="/js/scripts.js"></script> <!-- Custom scripts -->
+    <script type="module" src="/js/solicitudes.js"></script> <!-- Custom scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="/js/flowbite.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>

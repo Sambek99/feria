@@ -1,0 +1,15 @@
+'use strict';
+
+document.addEventListener("DOMContentLoaded", () => {
+  const nombre = localStorage.getItem("nombre");
+  const telefono = localStorage.getItem("telefono");
+  const cupos = localStorage.getItem("cupos");
+
+  if (nombre && telefono && !isNaN (cupos)) {
+    document.getElementById("nombre").textContent = nombre;
+    document.getElementById("telefono").textContent = "Número de teléfono: " + telefono;
+    document.getElementById("cupos").textContent = cupos;
+  } else {
+    document.querySelector(".block").innerHTML = "<p class='text-center text-red-500'>No hay datos disponibles. Regresa a la página anterior y selecciona una tarjeta.</p>";
+  }
+});
